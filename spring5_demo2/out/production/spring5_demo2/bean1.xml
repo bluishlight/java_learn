@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="stu" class="com.atguigu.spring5.collectiontype.Stu">
+        <property name="courses">
+            <array>
+                <value>基础课</value>
+                <value>高级课</value>
+            </array>
+        </property>
+        <property name="list">
+            <list>
+                <value>列表1</value>
+                <value> 列表2</value>
+                <value>列表 3</value>
+            </list>
+        </property>
+        <property name="set">
+            <set>
+                <value>集合1</value>
+                <value>集合2</value>
+                <value>集合3</value>
+            </set>
+        </property>
+        <property name="maps">
+            <map>
+                <entry key="PYTHON" value="值1"/>
+                <entry key="JAVA" value="值2"/>
+            </map>
+        </property>
+    </bean>
+</beans>

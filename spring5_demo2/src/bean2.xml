@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="stu" class="com.atguigu.spring5.collectiontype.Stu">
+        <property name="courseList">
+            <list>
+                <ref bean="c1"></ref>
+                <ref bean="c2"></ref>
+            </list>
+        </property>
+    </bean>
+    <bean id="c1" class="com.atguigu.spring5.collectiontype.Course">
+        <property name="name" value="初级课"></property>
+        <property name="teacher" value="高老师"></property>
+    </bean>
+    <bean id="c2" class="com.atguigu.spring5.collectiontype.Course">
+        <property name="name" value="高级课"></property>
+        <property name="teacher" value="刘老师"></property>
+    </bean>
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    配置User 对象创建-->
+    <bean id="user" class="com.atguigu.spring5.User"></bean>
+
+<!--    <bean id="book" class="com.atguigu.spring5.Book">-->
+<!--        <property name="bname" value="易筋经"></property>-->
+<!--        <property name="bauthor" value="达摩老祖"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="book2" class="com.atguigu.spring5.Book">-->
+<!--        <constructor-arg name="bname" value="哈利珀特"></constructor-arg>-->
+<!--        <constructor-arg name="bauthor" value="JK.rollin"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="book" class="com.atguigu.spring5.Book" p:bname="易筋经" p:bauthor="达摩老祖"></bean>-->
+    <bean id="book" class="com.atguigu.spring5.Book">
+        <property name="bname" value="易筋经"></property>
+        <property name="bauthor" value="达摩老祖"></property>
+        <property name="address"><null/></property>
+    </bean>
+</beans>
